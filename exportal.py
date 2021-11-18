@@ -26,6 +26,4 @@ class ExecutionPortal:
         return await self._s2a_queue.get()
 
 
-exportal = ExecutionPortal()
-
 
