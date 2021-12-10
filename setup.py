@@ -6,7 +6,7 @@ setup(
   license='MIT',
   description = '',
   author = 'Dante Biase',
-  url = 'https://github.com/dante-biase',
+  url = 'https://github.com/dante-biase/exportal',
   download_url = 'https://github.com/dante-biase/exportal/archive/1.0.tar.gz',
   classifiers=[
     'Development Status :: 5 - Production/Stable',
