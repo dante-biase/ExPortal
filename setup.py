@@ -7,7 +7,7 @@ setup(
   description = '',
   author = 'Dante Biase',
   url = 'https://github.com/dante-biase/exportal',
-  download_url = 'https://github.com/dante-biase/exportal/archive/1.0.1.tar.gz',
+  download_url = 'https://github.com/dante-biase/exportal/archive/v1.0.1.tar.gz',
   classifiers=[
     'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Developers',
