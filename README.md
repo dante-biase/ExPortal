@@ -29,19 +29,19 @@ from exportal import ExecutionPortal
 exportal = ExecutionPortal()
 
 
-async def async_func():
-    value = await exportal.get_from_sync()
-    print(f"async:\trecieved value '{value}' from sync")
-    print("async:\tpassing value + 1 back to sync")
-    await exportal.pass_to_sync(value + 1, wait=False)
-
-
 def sync_func():
     value = 1
     print(f"sync:\tpassing value '{value}' to async")
     exportal.pass_to_async(value, wait=False)
     value = exportal.get_from_async()
     print(f"sync:\trecieved value '{value}' from async")
+
+
+async def async_func():
+    value = await exportal.get_from_sync()
+    print(f"async:\trecieved value '{value}' from sync")
+    print("async:\tpassing value + 1 back to sync")
+    await exportal.pass_to_sync(value + 1, wait=False)
 
 
 Thread(target=sync_func).start()
