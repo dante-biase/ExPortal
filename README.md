@@ -8,7 +8,7 @@ ExPortal is a simple tool that allows you to pass data between synchronous and a
 
 # requirements
 
-- Python 3.6^
+- Python >= 3.6
 
 # install
 
